@@ -1,0 +1,15 @@
+object Main extends App {
+  val numeros = List(1, 2, 3, 4)
+
+  // map: duplicar cada número
+  val dobles = numeros.map(x => x * 2)
+  println(s"Duplicando los números: $dobles") // Imprime List(2, 4, 6, 8)
+
+  // filter: encontrar los números pares
+  val pares = numeros.filter(x => x % 2 == 0)
+  println(s"Números pares: $pares") // Imprime List(2, 4)
+
+  // reduce: sumar todos los números
+  val sumaTotal = numeros.reduce((a, b) => a + b)
+  println(s"Suma total: $sumaTotal") // Imprime 10
+}

@@ -1,0 +1,14 @@
+numeros = [1, 2, 3, 4]
+
+# map: duplicar cada número
+dobles = list(map(lambda x: x * 2, numeros))
+print(f"Duplicando los números: {dobles}") # Imprime [2, 4, 6, 8]
+
+# filter: encontrar los números pares
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(f"Números pares: {pares}") # Imprime [2, 4]
+
+# reduce: sumar todos los números
+from functools import reduce
+suma_total = reduce(lambda a, b: a + b, numeros)
+print(f"Suma total: {suma_total}") # Imprime 10
